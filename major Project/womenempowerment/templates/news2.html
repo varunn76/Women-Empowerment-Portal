@@ -1,0 +1,263 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This entrepreneur has built a platform to help women-led small businesses flourish in the digital age</title>
+        <link href="{% static 'img/ladylogo.png' %}" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/stylenews1.css'%}">
+<!----Bootstrap--->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--jquery--->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--Slick Carousel-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+        <!---Font awesome-->
+        <script src="https://kit.fontawesome.com/51c8af3595.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+    <body>
+
+ <header>
+ <!----Back to top button--->
+         <a class="gotopbtn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+ <!------Navigation Bar---->
+ <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="website"><img src="{% static 'img/ladylogo.png' %}"></a>
+                
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="website">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#contact">CONTACT US</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mission">ENTERPENUR</a>
+      </li>
+        {% if user.is_authenticated %}
+                    <li class="drop-down"><a href="javascript:void(0)">Hii, {{user.first_name}}</a>
+                        <ul>
+                            <li><a href="LogOut">Log Out</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login" target="-blank">JOIN</a>
+            </li>
+            {% endif %}
+    </ul>
+  </div>
+</nav>
+     </div>
+        
+</header>
+
+<!--Content-->
+    <div class="content clearflix">
+        <!---Mian content--->
+        <div class="main-content-wrapper">
+        <div class="main-content">
+            <h1 class="post-title">This entrepreneur has built a platform to help women-led small businesses flourish in the digital age</h1>
+            <div class="author">
+            <p>Pooja Goel started Pink Collar Professionals to help women entrepreneurs go digital and maximise the benefits of the digital age for their businesses. In three months, she has helped over 35 women transform their businesses.</p>
+        </div>
+        <div class="post-image2">
+            <img src="{% static 'img/pic2.jpg' %}">
+        </div>
+       
+       <div class="post-content">
+           <p>Since childhood, <strong><span>Pooja Goel’s</span></strong> father had encouraged her to take up teaching. He would tell her “Even, if you teach someone for free, you enhance your knowledge and experience, and that means a lot”. When she was in eighth standard, she used to teach English and Mathematics to students of fifth standard and that continued as she pursued higher education.</p>
+           <p>Her helping and volunteering nature extended beyond school as she volunteered with various social organisations. Her desire to help others has also led to the formation of <strong><span>a not-for-profit venture, Pink Collar Professionals (PCP)</span></strong>.</p>
+          <p>I had the chance to speak with Jenkins about how minority workers are feeling as unemployment rises, and how they can be the best advocate for themselves now and in the future.</p>
+           <h2>Taking businesses online</h2>
+           <p>A BTech graduate, it was a natural move to the corporate world for Pooja. She worked with Infosys and Edgeverve Systems for three years before pursuing an MBA in Sales & Marketing in 2018. It was during her time at IMT Ghaziabad when she developed an <strong><span>interest in startups and devoted time to understanding and learning about the processes involved in becoming an entrepreneur.</span></strong></p>
+           <p>Exploring the startup ecosystem and attending multiple women-oriented summits, <strong><span>it became evident to Pooja that women in the startup ecosystem played a very small part.</span></strong> This gap in ideal numbers led her to come with the idea of<strong><span> Pink Collar Professionals - a platform to help women entrepreneurs.</span></strong><p>
+           
+           <p>On March 8, 2020, International Women’s Day, Pooja started consolidating her idea into a platform through social media pages. The coronavirus lockdown following closely after her launch, gave her the impetus to push stronger.</p>
+           
+           <p>Through PCP, Pooja helps women entrepreneurs chart plans for their success. To start off, <strong><span>she is helping women entrepreneurs go digital and scale their business.</span></strong> With the coronavirus pandemic forcing many activities to go online, she believes that the time is ripe for women-owned small businesses also to take their activities online and increase customer engagement and share.</p>
+           <div class="red">
+           <p>“Digital is going to be the next way forward. All the businesses are having a digital  transformation at an exponential rate now as compared to the last five years. So, I felt small businesses should not lag behind in this transformation and they should quickly move to digital and connect to their local customers via digital and social media marketing,” says Pooja.</p>
+           </div>
+           
+           <p>Women entrepreneurs can sign up on PCP’s website or simply message her on Facebook, LinkedIn or WhatsApp to be included in her digital and social media marketing consultancy programmes.</p>
+           
+           <h2>Helping women entrepreneurs</h2>
+           
+           <p>In a span of just three months,<strong><span> Pooja has assisted 34 women entrepreneurs</span></strong> to understand their businesses better and has<strong><span> successfully helped 12 women to work on digital transformation.</span></strong>  She is currently <strong><span>providing a three-month mentorship to four businesses.</span></strong> She has been working with entrepreneurs from various sectors including edtech, online healthcare, gifting, clothing, and handmade jewellery.</p>
+           
+           <p>Starting with <strong><span>digital marketing and personal branding for women entrepreneurs and professionals,</span></strong> Pooja helps formulate strategies to build a lasting digital connection with consumers, plans and monitors the ongoing company presence on social media, provides guidance in launching optimised online adverts through to increase company and<strong><span> brand awareness, provide creative ideas for content marketing and organises their distribution through various channels.</span></strong></p>
+           
+           <p>She also offers business consultancy, mentoring in personal branding, digital education and sales lead generation.</p>
+           
+           <p>The overwhelming response to her mentorship has become Pooja’s motivating factor that she says helps her “wake up every day and continue to work late hours at night”. She has received requests from various quarters to join her in helping mentor women entrepreneurs.</p> 
+           
+           <p>“I rarely come across real talents who stand like Pooja. Her genuine expertise is a sure way to ease your social media marketing pain points,” says Ruchi Bakhai, founder of EduPsych who received help from Pooja for her startup’s digital transformation.</p>
+           
+           <p>With the coronavirus pandemic sweeping across the globe, Pooja believes the lockdown and pause in business is also an important time for businesses to introspect and plan their next steps.</p>
+           
+       </div>
+        </div>
+        </div>
+    <!----End Main content---->
+       
+       
+    <!---Sidebar---->
+        <div class="sidebar">
+         
+         
+          <div class="section popular">
+              <h2 class="section-title">Popular</h2>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic1.jpeg' %}" alt="" >
+                  <a href="news1" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Meet the Black, Female Entrepreneurs Making a Safe...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+             <div class="post clearfix">
+                  <img src="{% static 'img/pic3.png' %}" alt="" >
+                  <a href="news3" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>This startup by two mothers offers 1,200 activities....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic11.png' %}" alt="" >
+                  <a href="news11" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Life lessons from the sporting legend, Mary Kom, who saw</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic4.png' %}" alt="" >
+                  <a href="news4" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Aditi Gupta putting an end to a period of taboos with...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic5.jpg' %}" alt="" >
+                  <a href="news5" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>How a VC in love with travel fell for her...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+
+            </div>
+              
+    </div>
+    </div>
+
+<!----End sidebar---->
+
+
+<!-----------Contact Us------>
+   <section id="contact">
+    <div class="contactus">
+    <div class="contactForm">
+        <h2>Leave a Reply</h2>
+        <div class="formBox">
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Last Name</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="email" name="" required>
+                <span>Email Address</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="number" name="" required>
+                <span>Mobile Number</span>
+            </div>            
+            <div class="inputBox w50">
+                <textarea type="text" name="" required></textarea>
+                <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+                <input type="submit" class="btn" value="Send Message">
+            </div>
+            
+        </div>
+    </div>
+       </div>
+    
+    </section>
+<!----End Contact Us--->
+<!-----Footer----->
+        <footer id="footer">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="{% static 'img/ladylogo.png' %}" alt="" class="logo">
+                 <div class="social-media">
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        <p class="right-text">
+          &copy; Copyright 2020 <strong><span>Womens Empowerment</span></strong>. All Rights
+          Reserved
+        </p>
+            </div>
+               <div class="right-col">
+                   <h1>Join Our Instant Alert System</h1>
+                   <div class="border"></div>
+                       <p>Enter Your Email for our news and updates.</p>
+                       <form action="" class="newsletter-form">
+                           <input type="email" class="txtb" placeholder="Enter Your Email">
+                           <input type="submit" class="btn" value="submit">
+                       </form>
+               </div>
+        </div>
+    </footer>
+
+<!------End Footer---->
+
+
+</body>
+</html>

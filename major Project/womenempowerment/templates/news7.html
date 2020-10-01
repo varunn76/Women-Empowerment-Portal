@@ -1,0 +1,278 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Remembering Kalpana Chawla: First Indian Woman In Space</title>
+        <link href="{% static 'img/ladylogo.png' %}" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/stylenews1.css' %}">
+<!----Bootstrap--->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--jquery--->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--Slick Carousel-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+        <!---Font awesome-->
+        <script src="https://kit.fontawesome.com/51c8af3595.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+    <body>
+
+ <header>
+ <!----Back to top button--->
+         <a class="gotopbtn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+ <!------Navigation Bar---->
+ <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="website"><img src="{% static 'img/ladylogo.png' %}"></a>
+                
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="website">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#contact">CONTACT US</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mission">ENTERPENUR</a>
+      </li>
+        {% if user.is_authenticated %}
+                    <li class="drop-down"><a href="javascript:void(0)">Hii, {{user.first_name}}</a>
+                        <ul>
+                            <li><a href="LogOut">Log Out</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login" target="-blank">JOIN</a>
+            </li>
+            {% endif %}
+    </ul>
+  </div>
+</nav>
+     </div>
+        
+</header>
+
+<!--Content-->
+    <div class="content clearflix">
+        <!---Mian content--->
+        <div class="main-content">
+           <div class="main-content-wrapper">
+            <h1 class="post-title">Remembering Kalpana Chawla: First Indian Woman In Space</h1>
+            <div class="author">
+                <p>By Sunitra Pacheco </p>
+            </div>
+       <div class="post-content">
+           <p>15 years ago, the world watched in horror as the US space shuttle Columbia disintegrated while reentering the earth’s atmosphere. All seven crew members on board were lost; one of them was Indian-American Kalpana Chawla, the first woman of Indian origin to go to space. Although Kalpana’s second space flight ended in disaster, she is remembered as an extraordinary woman, an inspiration, and a role model. She set a mighty example for being courageous, dedicated, and an independent woman who set her eyes on space and followed through with her dream.</p>
+          
+        <div class="post-image5">
+            <img src="{% static 'img/pic7.png' %}">
+        </div>
+        <p>Born in Karnal district in Haryana, Kalpana was interested in aeronautical engineering from an early age and did all she could to pursue her dreams, no mean feat in a society where engineers are overwhelming male. Moving to the US helped her earn a Master’s and a Doctorate in her chosen field. Kalpana worked at NASA for seven years before becoming an astronaut in March 1995. She took off on her maiden flight in November 1997.</p>
+        <p>As the first Indian woman and only the second Indian in history to fly in space, Kalpana broke all kinds of barriers and inspired a whole new generation of young girls and women to look to the stars. On her 15th death anniversary, we remember the lessons taught by a woman who believed no challenge was too big, and who refused to let fear of the unknown stop her from succeeding.</p>
+        
+        <h2>No dream is too big</h2>
+        
+        <p>
+            When Kalpana was a kid, she would gaze at the stars with her siblings. Right then she made up her mind to unravel the questions of time and space. She once said, “Times like those gave me the opportunity to wonder and ask all those very basic questions. That sense of awe for the heavens started there.” This awe would lead her to overcome all obstacles in her way.
+        </p>
+        
+        <p>“I’ve always been very determined. I don’t get easily discouraged.”</p>
+        
+        <div class="post-image5">
+            <img src="v static 'img/pic7.1.png' %}">
+        </div>
+
+        <p>“I never truly thought of being the first or second someone. Or being a small-town girl. This is just something I wanted to do. It was very important for me to enjoy it.”</p>
+        
+        <p>“If you want to do something, what does it matter where you are ranked? Nor does being a woman make a difference.”</p>
+        
+        <h2>Enjoy the journey</h2>
+        
+        <p>While focused on achieving her dreams, Kalpana was also mindful of making the most of her time getting there. She firmly believed in witnessing, experiencing, and enjoying the journey of reaching one’s goals. Often, the pursuit seems like an insurmountable task which forces many to forget to enjoy the path there. If we ensure to make the most of every step of the journey, reaching the destination will not only be easier – it will also be more fun.</p>
+        
+        <p>“Do something because you really want to do it. If you’re doing it just for the goal and don’t enjoy the path, then I think you’re cheating yourself.”</p>
+        
+        <div class="post-image5">
+            <img src="{% static 'img/pic7.2.png' %}">
+        </div>
+        
+        <h2>Keep the bigger picture in mind</h2>
+        
+        <p>Often using philosopher Seneca’s words to describe her relationship with the universe, Kalpana used to say, “I was not born for one corner. The whole world is my native land.” She was very mindful of her place in the greater scheme of things, and like many astronauts before her, and since, she viewed her work as a service to all humanity.</p>
+        
+        <p>
+            Of course, chasing profits and the bottom line are goals all businesses and entrepreneurs pursue. However, it is worthwhile to keep in mind that every action you take and product/service you deliver has the potential to make the world a better place. Working with that larger picture in mind is key to establishing a truly fulfilling business and a lasting legacy.
+        </p>
+    
+       <p>There are so many people who are arguing or fighting over issues which don’t have much relevance. We must all realise it is not worth it. It’s like being in the whirlpools which are always present behind a little rock near a river. We seem to be living in these little whirlpools and forget that there is a whole river. The picture is much bigger. We should take time to look at the picture.</p>
+       
+       <p>
+           “When you look at the stars and the galaxy, you feel that you are not just from any particular piece of land, but from the solar system.” </p>
+           <p>In all her years at NASA, and in all her pursuits, Kalpana was always determined to think outside the box and look past any challenge. Her legacy is one of encouraging young girls and women everywhere to dare to dream of the stars and never let society’s preconceived notions and biases hold them back.
+       </p>
+        </div>
+        </div>
+        </div>
+    <!----End Main content---->
+       
+       
+    <!---Sidebar---->
+        <div class="sidebar">
+         
+     
+         
+         
+          <div class="section popular">
+              <h2 class="section-title">Popular</h2>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic2.jpg' %}" alt="" >
+                  <a href="news2" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>This entrepreneur has built a platform to....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+                           <div class="post clearfix">
+                  <img src="{% static 'img/pic1.jpeg' %}" alt="" >
+                  <a href="news1" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Meet the Black, Female Entrepreneurs Making a Safe...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+             <div class="post clearfix">
+                  <img src="{% static 'img/pic3.png' %}" alt="" >
+                  <a href="news3" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>This startup by two mothers offers 1,200 activities....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{%{% static 'img/pic4.png' %}" alt="" >
+                  <a href="news4" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Aditi Gupta putting an end to a period of taboos...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic6.jpg' %}" alt="" >
+                  <a href="news6" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>A 'Beauty'ful Success Story- Falguni Nayar,....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+
+    </div>
+    </div>
+
+<!----End sidebar---->
+
+
+<!-----------Contact Us------>
+   <section id="contact">
+    <div class="contactus">
+    <div class="contactForm">
+        <h2>Leave a Reply</h2>
+        <div class="formBox">
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Last Name</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="email" name="" required>
+                <span>Email Address</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="number" name="" required>
+                <span>Mobile Number</span>
+            </div>            
+            <div class="inputBox w50">
+                <textarea type="text" name="" required></textarea>
+                <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+                <input type="submit" class="btn" value="Send Message">
+            </div>
+            
+        </div>
+    </div>
+       </div>
+    
+    </section>
+<!----End Contact Us--->
+<!-----Footer----->
+        <footer id="footer">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="{% static 'img/ladylogo.png' %}" alt="" class="logo">
+                 <div class="social-media">
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        <p class="right-text">
+          &copy; Copyright 2020 <strong><span>Womens Empowerment</span></strong>. All Rights
+          Reserved
+        </p>
+            </div>
+               <div class="right-col">
+                   <h1>Join Our Instant Alert System</h1>
+                   <div class="border"></div>
+                       <p>Enter Your Email for our news and updates.</p>
+                       <form action="" class="newsletter-form">
+                           <input type="email" class="txtb" placeholder="Enter Your Email">
+                           <input type="submit" class="btn" value="submit">
+                       </form>
+               </div>
+        </div>
+    </footer>
+
+<!------End Footer---->
+
+</body>
+</html>

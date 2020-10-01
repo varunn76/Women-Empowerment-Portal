@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hall Educational Foundation: Empowering women through education</title>
+        <link href="{% static 'img/ladylogo.png' %}" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/stylenews1.css' %}">
+<!----Bootstrap--->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--jquery--->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--Slick Carousel-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+        <!---Font awesome-->
+        <script src="https://kit.fontawesome.com/51c8af3595.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+    <body>
+    
+ <header>
+ <!----Back to top button--->
+         <a class="gotopbtn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+ <!------Navigation Bar---->
+ <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="website"><img src="{% static 'img/ladylogo.png' %}"></a>
+                
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="website">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#contact">CONTACT US</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mission">ENTERPENUR</a>
+      </li>
+        {% if user.is_authenticated %}
+                    <li class="drop-down"><a href="javascript:void(0)">Hii, {{user.first_name}}</a>
+                        <ul>
+                            <li><a href="LogOut">Log Out</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login" target="-blank">JOIN</a>
+            </li>
+            {% endif %}
+    </ul>
+  </div>
+</nav>
+     </div>
+        
+</header>
+
+<!--Content-->
+    <div class="content clearflix">
+        <!---Mian content--->
+        <div class="main-content-wrapper">
+        <div class="main-content">
+            <h1 class="post-title">Study Hall Educational Foundation: Empowering women through education</h1>
+            <div class="author">
+                <p>Study Hall Education Foundation, started by Urvashi, educates over 6,000 students and trains over 8,000 teachers directly. It works with over 1,50,000 students, teachers, young women.</p>
+            </div>
+       <div class="post-content">
+          
+          <div class="post-image3">
+            <img src="{% static 'img/pic8.png' %}">
+        </div>
+           <p>In India, gender discrimination begins at home. In large parts of the country, the female child is still seens as a burden, and is unsafe both at home and on the streets. In these cases, the girl child is valued for her reproductive responsibilities and as domestic labour. This gender discrimination also becomes a barrier to education – taking shape in the form of unfair burden of domestic work, early forced marriages, and sibling care. Therefore, education is considered less cost effective when it comes to a girl child.</p>
+          
+        
+        <p>Trying to change this situation as much as she could, Urvashi Sahini founded Study Hall Education Foundation in Lucknow to provide quality education to underprivileged girls and youth in urban and rural India. Its uniqueness is that pedagogy focusses on feminist-based and gender sensitisation techniques.</p>
+        
+        <p>In the year 1986, Urvashi started Study Hall school, a school in her garage in Lucknow, Uttar Pradesh. But, SHEF as a society was established in 1994. Currently, it runs multiple educational initiatives in urban and rural India.<p>
+        
+           <h2>Urvashi’s journey to equality</h2>
+        
+           <p>Urvashi also faced gender discrimination early at home as she writes in her book, <strong><span>Reaching for the Sky: Empowering Girls Through Education,</span></strong> “ I was supposed to stay at home when I was not in school and help my mother in the kitchen and with other household chores. On many evenings, my brothers played cricket while I ironed clothes or took care of my younger siblings. I chafed at these constraints and at the clear discrimination. Seething with anger at the unfair constrictions on my life, I felt suffocated and caged. I complained often to my mother and siblings. My brothers were sympathetic and supportive, and my mother, though she sympathised, advised graceful acceptance, saying, ‘Remember, you are a girl’.”
+        </p>
+    
+        <div class="post-image3">
+            <img src="{% static 'img/pic8.1.png' %}">
+        </div>
+
+        <p>In a chapter called Educating Myself, she recalls how she had fulfilled patriarchal norms by marrying a man chosen by her father at the age of 18. Nevertheless, her zeal complete her higher education was still there.</p>
+        
+         <div class="red">
+           <p>“There was no provision for a distance-learning bachelor’s programme in the university, but I found my way to the registrar’s office and explained my situation. I appealed to him to waive my attendance and allow me to study independently and take the examination as a regular student. To my surprise, he allowed it. I am ever grateful to him,” she writes.</p>
+           </div>
+        
+        <p>Urvashi’s life changed completely after her cousin, unhappy with her marriage, committed suicide. This incident shook her as she pens down, “Her death made a deep impression on me. Unable to put it aside, I decided to start a helpline for women in distress. I founded the first family counselling centre in Uttar Pradesh in 1983, called Suraksha. With no training in counseling or in gender issues, and with more enthusiasm than maturity, I dealt with many cases of domestic violence and tried my best to help. I had no idea what I was up against. My work with Suraksha took me to middle-class and working-class homes, in both rural and urban areas, and broke some of the insularity of my social class. The poor rural women faced the same problems and met the same level of violence that had ended the life of my rich, urban cousin.”</p>
+        
+        <div class="post-image3">
+            <img src="{% static 'img/pic8.2.png' %}">
+        </div>
+        
+        <p>Urvashi felt the need to study ahead, and went on to do her Master’s. With the introduction to Western philosophers she found herself to be an equal person. She addresses, “It was around this time, at the ripe old age of 28, mother of two, that I found the understanding that had eluded me all these years: I was an equal person! I woke up in the middle of the night and whispered to myself, ‘You are an equal person. You have a legitimate right to everything anyone else has’.”</p>
+        
+        <h2>Discontentment with education</h2>
+        
+        <p>Meanwhile , Urvashi was conducting gender workshops under Suraksha where she had the chance to visit schools, “Reflecting on my own school education, I realised that though school had equipped me with reading and writing skills and academic information, it had not taught me that I was an equal person. It had not given me the conceptual tools to critically examine my life as a girl in a strongly patriarchal society. Most of the schools I visited were like mine. They did not address many of the existential questions that students have; they did not teach their students how to live.”</p>
+        
+        <div class="post-image3">
+            <img src="{% static 'img/pic8.3.png' %}">
+        </div>
+        
+        <p>Then she met Ahalya Chari, Director of Krishnamurti Foundation school at Rajghat, who suggested Urvashi starts a school. With the support from her family, she started a pre-school, Study Hall School, in her garage.</p>
+        
+        <h2>The journey of study hall to SHEF</h2>
+        
+        <p>In 2003, Urvashi founded Prerna, a school for girls from very low income families, which aimed to help girls address the multiple challenges of patriarchal society and fight out gender discrimination inbuilt in its very structure. “So I developed a critical feminist pedagogy to help them critically examine their lives as embedded in patriarchal structures and find ways of resisting discrimination. We taught them to learn to recognise themselves as equal autonomous persons deserving respect and having the right to live lives of their own choosing. We have been working at this for 14 years now and achieved some measure of success, as our girls have gone from strength to strength. Our challenge was to focus on life outcomes, not just learning outcomes. Our school has high retention rates and very high transition rates to higher education.” In 2013, SHEF began a boys school, with the aim of developing feminist/egalitarian consciousness in boys.</p>
+        
+        <div class="post-image3">
+            <img src="{% static 'img/pic8.4.png' %}">
+        </div>
+        <p>
+           In 2005, SHEF expanded to rural areas through Vidyasthali, which provided affordable high quality education to over 400 students from 55 villages. In the same year, they also started an integrated programme for special needs children, called DOSTI. “We now have over 100 students in this programme. We also introduced Digital Studyhall, a video technology through which our materials are available free on YouTube through our channel DSH Online.It caters to nearly 1,00,000 students and teachers in UP, Rajasthan and other parts of the country and the world,” says Urvashi. The latest venture of SHEF is Studyhall College, started in 2016.
+        </p>
+    
+       <p>There are so many people who are arguing or fighting over issues which don’t have much relevance. We must all realise it is not worth it. It’s like being in the whirlpools which are always present behind a little rock near a river. We seem to be living in these little whirlpools and forget that there is a whole river. The picture is much bigger. We should take time to look at the picture.</p>
+       
+       <h2>Redefining education</h2>
+       
+       <p>Since its inception SHEF has reached out to over 2,50,000 students. Currently, SHEF educate over 6,000 students and trains over 8,000 teachers directly, and works with over 1,50,000 students, teachers, young women. It based on a business as well as philanthropic model. Urvashi describes, “We have several volunteers, but our paid employees outnumber these considerably. We are a non-profit organisation, so that though we have revenue earning units, we plough the profits into our non-revenue-earning units like Prerna.”
+       </p>
+       
+       <div class="post-image3">
+            <img src="{% static 'img/pic8.5.png' %}">
+        </div>
+        
+        <p>With a vision to teaching using feminist-based pedagogy to facilitate adolescent empowerment discussions on social issues in the classrooms, Urvashi is doing her bit to change the perception of education. In Oct 2017, Urvashi was awarded the Social Entrepreneur of the Year India by a joint initiative of Jubilant Bhartia Foundation and Schwab Foundation for Social Entrepreneurship (a sister organisation of the World Economic Forum).</p>
+       
+        </div>
+        </div>
+        </div>
+    <!----End Main content---->
+       
+       
+    <!---Sidebar---->
+        <div class="sidebar">
+         
+     
+         
+         
+          <div class="section popular">
+              <h2 class="section-title">Popular</h2>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic7.png' %}" alt="" >
+                  <a href="news7" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Remembering Kalpana Chawla: First Indian Woman In Space</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+             <div class="post clearfix">
+                  <img src="{% static 'img/pic3.png' %}" alt="" >
+                  <a href="news3" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>This startup by two mothers offers 1,200 activities....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic4.png' %}" alt="" >
+                  <a href="news4" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Aditi Gupta putting an end to a period of taboos...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic5.jpg' %}" alt="" >
+                  <a href="news5" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>How a VC in love with travel fell for her portfolio...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic6.jpg' %}" alt="" >
+                  <a href="news6" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>A 'Beauty'ful Success Story- Falguni Nayar,....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+    </div>
+    </div>
+
+<!----End sidebar---->
+
+
+<!-----------Contact Us------>
+   <section id="contact">
+    <div class="contactus">
+    <div class="contactForm">
+        <h2>Leave a Reply</h2>
+        <div class="formBox">
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Last Name</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="email" name="" required>
+                <span>Email Address</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="number" name="" required>
+                <span>Mobile Number</span>
+            </div>            
+            <div class="inputBox w50">
+                <textarea type="text" name="" required></textarea>
+                <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+                <input type="submit" class="btn" value="Send Message">
+            </div>
+            
+        </div>
+    </div>
+       </div>
+    
+    </section>
+<!----End Contact Us--->
+<!-----Footer----->
+        <footer id="footer">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="{% static 'img/ladylogo.png' %}" alt="" class="logo">
+                 <div class="social-media">
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        <p class="right-text">
+          &copy; Copyright 2020 <strong><span>Womens Empowerment</span></strong>. All Rights
+          Reserved
+        </p>
+            </div>
+               <div class="right-col">
+                   <h1>Join Our Instant Alert System</h1>
+                   <div class="border"></div>
+                       <p>Enter Your Email for our news and updates.</p>
+                       <form action="" class="newsletter-form">
+                           <input type="email" class="txtb" placeholder="Enter Your Email">
+                           <input type="submit" class="btn" value="submit">
+                       </form>
+               </div>
+        </div>
+    </footer>
+
+<!------End Footer---->
+
+
+</body>
+</html>

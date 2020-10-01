@@ -1,0 +1,394 @@
+:root {
+  --themeColor: #0f3959;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+
+}
+a
+{
+    text-decoration: none!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+/*----Back to Top Button*/
+
+.gotopbtn{
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+.gotopbtn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: var(--themeColor);
+  color: #fff;
+  transition: all 0.4s;
+}
+.gotopbtn:hover{
+  bottom: 19px;
+
+}
+.clearflix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*------NavigationBar-------*/
+
+.nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    
+}
+.navbar-brand img
+{
+    height: 50px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+.nav-bar ul li a:hover
+{
+    color:#007bff!important;
+    border-radius: 5px;
+    vertical-align: middle;
+    background: #555;
+    padding: 0px 0.5rem;
+    
+}
+.navbar
+{
+    background: #0f3959;
+    height: 80px;
+}
+.navbar:hover
+{
+    box-shadow: 0 2px 20px #333;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color: #fff!important;
+    font-weight: 600;
+    font-size: 16px;   
+}
+/*----End Navigation---*/
+
+/*----Mian content---*/
+.content{
+    width: 100%;
+    margin: 0px auto 30px;
+    padding-left: 40px;
+    background: #f1f1f1;/*f6f6f6*/
+}
+
+.content .main-content{
+    width: 70%;
+    float: left;
+    background: white;
+    padding: 20px 50px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.content .main-content .post-title{
+    font-family: "TimesNewRoman",serif;
+    color: #444;
+    text-align: left;
+    margin-bottom: 30px;
+    letter-spacing: -.09rem;
+    font-weight: 700;
+    font-size: 50px;
+}
+.content .popular .post{
+    border-top: 1px solid #e0e0e0;
+    margin-top: 8px;
+    padding-top: 10px;
+}
+
+.content .popular .post img{
+    height: 50px;
+    width: 73px;
+    float: left;
+    margin-right: 10px;
+}
+.content .popular .post .pop span{
+    color: #555;
+    font-size: 17px;
+    font-weight: 600;
+}
+.content .popular .post .pop span:hover{
+    color: #005255;
+    font-weight: 630;
+}
+.content .main-content .post-image{
+    width: 600px;
+    height: 417px;
+    margin-bottom: 30px;
+}
+.content .main-content .post-content h1{
+    font-size: 50px;
+    margin-bottom: 20px
+}
+
+.content .main-content .post-content h2{
+    font-size: 30px;
+    color: #555;
+    font-weight: 650;
+    font-family: "robot" ,sans-serif;
+    margin-bottom: 17px
+}
+.content .main-content .post-content p{
+    font-size: 19px;
+    margin-bottom: 23px;
+}
+.content .main-content .post-content p span a{
+    color: #888;
+    font-weight: 500;
+    text-decoration: none;
+}
+.content .popular .post{
+    border-top: 1px solid #e0e0e0;
+    margin-top: 8px;
+    padding-top: 10px;
+}
+
+.content .popular .post img{
+    height: 50px;
+    width: 73px;
+    float: left;
+    margin-right: 10px;
+}
+.content .popular .post .pop span{
+    color: #555;
+    font-size: 17px;
+    font-weight: 600;
+}
+.content .popular .post .pop span:hover{
+    color: #005255;
+    font-weight: 630;
+}
+/*----Sidebar----*/
+.content .sidebar{
+    width: 26.5%;
+    float: left;
+    height: 300px;
+    padding: 0px 10px;
+}
+.content .sidebar .section .section-title{
+    margin: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+.content .sidebar .section{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.content .sidebar .section .search{
+    margin-top: 80px;
+}
+.content .sidebar .section.topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+.content .sidebar .section.topics ul li a{
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.content .sidebar .section.topics ul li a:hover{
+    padding-left: 20px;
+    transition: all 0.3s;
+}
+
+/*footer---*/
+#footer
+{
+    background: #CECECE;
+    padding: 90px 0;
+}
+#footer .footer-container
+{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+#footer .logo
+{
+    width: 100px;
+}
+#footer .social-media
+{
+    margin: 20px 0;
+}
+#footer .social-media i
+{
+    color: var(--themeColor);
+    margin-right: 29px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+#footer .social-media i:hover
+{
+    color: #fc5c65;
+}
+
+#footer .right-col h1
+{
+    font-size: 26px;
+}
+#footer .right-col p
+{
+    font-size: 18px;
+}
+#footer .border
+{
+    width: 150px;
+    height: 4px;
+    background: #0f3959;
+}
+
+.newsletter-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer .txtb
+{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+#footer .btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #0f3959;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+
+#footer .btn:hover
+{
+    opacity: .7;
+}
+
+/*media queries*/
+@media only screen and (max-width: 934px){
+    .content{
+    width: 100%;
+        padding: 0px;
+}
+
+    .content .main-content{
+    width: 100%;
+}
+    
+    .content .sidebar{
+    width: 100%;
+    padding: 10px 0px;
+}
+    
+    #footer{
+        padding: 150px 0px;
+    }
+    .content .main-content .post-title{
+    letter-spacing: -.03rem;
+    font-size: 45px;
+        
+}    
+}
+
+
+@media only screen and (max-width: 770px)
+{
+    header{
+        position: relative;
+    }
+    .navbar .navbar-nav{
+        width: 140px;
+        border-radius: 5px;
+        background: #0f3959;
+    }
+    .nav-link{
+        color: #888;
+    }
+    .main-content-wrapper{
+        padding: 10px;
+    }
+    #contact .contactus{
+    max-width: 600px;
+    text-align:center;
+    }
+    .footer-container{
+        max-width: 600px;
+    }
+    .right-col{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .left-col
+    {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,248 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meet the Black, Female Entrepreneurs Making a Safe Space for Minority Professionals</title>
+        <link href="{% static 'image/ladylogo.png' %}" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/stylenews.css' %}">
+<!----Bootstrap--->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--jquery--->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--Slick Carousel-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+        <!---Font awesome-->
+        <script src="https://kit.fontawesome.com/51c8af3595.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+    <body>
+    <!----Facebook page plugin-->
+    
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="FxLFcA7h"></script>
+    
+
+ <header>
+ <!----Back to top button--->
+         <a class="gotopbtn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+ <!------Navigation Bar---->
+ <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+  <a class="navbar-brand" href="website"><img src="{% static 'img/ladylogo.png' %}"></a>
+                
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="website">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#contact">CONTACT US</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mission">ENTERPENUR</a>
+      </li>
+        {% if user.is_authenticated %}
+                    <li class="drop-down"><a href="javascript:void(0)">Hii, {{user.first_name}}</a>
+                        <ul>
+                            <li><a href="LogOut">Log Out</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login" target="-blank">JOIN</a>
+            </li>
+            {% endif %}
+    </ul>
+  </div>
+</nav>
+     </div>
+        
+</header>
+
+<!--Post Content-->
+    <div class="content clearflix">
+        <!---Mian content--->
+        <div class="main-content">
+          <h1 class="recent-post-title">Latest News</h1>
+     <div class="post clearfix">
+         <img src="{% static 'img/pic1.jpeg' %}" alt="" class="post-image">
+            <div class="post-preview">
+              <a class="news-link "href="news1" target="-blank">
+                 <div class="pose">
+        <div style="overflow: hidden">
+                  <span>Meet the Black, Female Entrepreneurs Making a Safe for Minority Professionals</span>
+                     </div>
+                  </div>
+                  </a>
+                <i class="far fa-user">Kanika Tolver</i>
+                        &nbsp;
+                  <i class="fas fa-calendar-week">June 1,2020</i>
+                <p class="preview-text">When you think about the “American Dream," what probably comes to mind is getting a quality education and pursuing a successful career. </p>
+              <div class="vision-button">
+            <a class="vision-btn read-more" href="news1" target="-blank">Read more>></a>
+          </div>
+       </div>
+    </div>
+       
+    <div class="post clearfix">
+         <img src="{% static 'img/pic2.jpg' %}" alt="" class="post-image">
+            <div class="post-preview">
+              <a class="news-link "href="news2" target="-blank">
+                 <div class="pose">
+        <div style="overflow: hidden">
+                  <span>This entrepreneur has built a platform to help women-led small businesses flourish in the digital age</span>
+                     </div>
+                  </div>
+                  </a>
+                <i class="far fa-user">Nirandhi Gowthaman</i>
+                        &nbsp;
+                  <i class="fas fa-calendar-week">June 11,2020</i>
+                <p class="preview-text">When you think about the “American Dream," what probably comes to mind is getting a quality education and pursuing a successful career. </p>
+              <div class="vision-button">
+            <a class="vision-btn read-more" href="news2" target="-blank">Read more>></a>
+          </div>
+       </div>
+    </div>
+    
+    <div class="post clearfix">
+         <img src="{% static 'img/pic3.png' %}" alt="" class="post-image">
+            <div class="post-preview">
+              <a class="news-link "href="news3" target="-blank">
+                 <div class="pose">
+        <div style="overflow: hidden">
+            <span>This startup by two mothers offers 1,200 activities for babies, toddlers, and pre-schoolers</span>
+                     </div>
+                  </div>
+                  </a>
+                <i class="far fa-user">Rekha Balakrishnan</i>
+                        &nbsp;
+                  <i class="fas fa-calendar-week">June 13,2020</i>
+                <p class="preview-text">Launched by Sumedha Khoche and Shireen Sultana, the KinderPass app is inspired by the Montessori method, and contains activities for ages 0-4, screen-free exercises,</p>
+              <div class="vision-button">
+            <a class="vision-btn read-more" href="news3" target="-blank">Read more>></a>
+          </div>
+       </div>
+    </div>
+    
+    <div class="post clearfix">
+         <img src="{% static 'img/pic4.png' %}" alt="" class="post-image">
+            <div class="post-preview">
+              <a class="news-link "href="news4" target="-blank">
+                 <div class="pose">
+        <div style="overflow: hidden">
+            <span>Aditi Gupta putting an end to a period of taboos with Menstrupedia</span>
+                     </div>
+                  </div>
+                  </a>
+                <i class="far fa-user">Tanvi Devi</i>
+                        &nbsp;
+                  <i class="fas fa-calendar-week">May 28,2020</i>
+                <p class="preview-text">One of the most popular names in the menstrual hygiene product space is Whisper. Since puberty,</p>
+              <div class="vision-button">
+            <a class="vision-btn read-more" href="news4" target="-blank">Read more>></a>
+          </div>
+       </div>
+    </div>
+    
+    <div class="post clearfix">
+         <img src="{% static 'img/pic5.jpg' %}" alt="" class="post-image">
+            <div class="post-preview">
+              <a class="news-link "href="news5" target="-blank">
+                 <div class="pose">
+        <div style="overflow: hidden">
+            <span>How a VC in love with travel fell for her portfolio company and co-founded V Resorts</span>
+                     </div>
+                  </div>
+                  </a>
+                <i class="far fa-user">Jubin Mehta</i>
+                        &nbsp;
+                  <i class="fas fa-calendar-week">June 15,2020</i>
+                <p class="preview-text">Aditi Balbir is an avid traveler. She went on a world tour when she was 6, and ever since that trip, she jumped on to every chance of going to different places.</p>
+              <div class="vision-button">
+            <a class="vision-btn read-more" href="news5" target="-blank">Read more>></a>
+          </div>
+       </div>
+    </div>
+    
+        </div>
+    <!----End Main content---->
+       <!--Sidebar---->
+        <div class="sidebar">
+        
+          <div class="section search">
+              <h2 class="section-title">Search</h2>
+              <form action="website" method="post">
+                  <input type="text" name="search-term" class="text-input" placeholder="Search...">
+              </form>
+          </div>
+          
+          
+          <div class="section topics">
+              <h2 class="section-title">Topics</h2>
+              <ul>
+                  <li><a href="news10">The SHEROES Story And Backing Women Entrepreneurs</a></li>
+                  <li><a href="news6">A 'Beauty'ful Success Story- Falguni Nayar</a></li>
+                  <li><a href="news7">Remembering Kalpana Chawla</a></li>
+                  <li><a href="news8">Study Hall Educational Foundation</a></li>
+                  <li><a href="news11">Mary Kom is a name that resonates patience and perseverance</a></li>
+                  <li><a href="news2">This entrepreneur has built a platform</a></li>
+
+              </ul>
+          </div>
+    </div>
+    </div>
+
+<section id="nextp">
+<a href="#" class="previous round">&#8249;</a>
+<a href="news2.0" class="next round">&#8250;</a>
+</section>
+<!-----Footer----->
+        <footer id="footer">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="{% static 'img/ladylogo.png' %}" alt="" class="logo">
+                 <div class="social-media">
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        <p class="right-text">
+          &copy; Copyright 2020 <strong><span>Womens Empowerment</span></strong>. All Rights
+          Reserved
+        </p>
+            </div>
+               <div class="right-col">
+                   <h1>Join Our Instant Alert System</h1>
+                   <div class="border"></div>
+                       <p>Enter Your Email for our news and updates.</p>
+                       <form action="" class="newsletter-form">
+                           <input type="email" class="txtb" placeholder="Enter Your Email">
+                           <input type="submit" class="btn" value="submit">
+                       </form>
+               </div>
+        </div>
+    </footer>
+
+<!------End Footer---->
+
+</body>
+</html>

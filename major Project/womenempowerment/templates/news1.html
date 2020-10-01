@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meet the Black, Female Entrepreneurs Making a Safe Space for Minority Professionals</title>
+        <link href="{% static 'img/ladylogo.png' %}" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/stylenews1.css' %}">
+<!----Bootstrap--->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--jquery--->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--Slick Carousel-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+        <!---Font awesome-->
+        <script src="https://kit.fontawesome.com/51c8af3595.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+    <body>
+
+ <header>
+ <!----Back to top button--->
+         <a class="gotopbtn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+ <!------Navigation Bar---->
+ <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="website"><img src="{% static 'img/ladylogo.png' %}"></a>
+                
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="website">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#contact">CONTACT US</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mission">ENTERPENUR</a>
+      {% if user.is_authenticated %}
+                    <li class="drop-down"><a href="javascript:void(0)">Hii, {{user.first_name}}</a>
+                        <ul>
+                            <li><a href="LogOut">Log Out</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login" target="-blank">JOIN</a>
+            </li>
+            {% endif %}
+    </ul>
+  </div>
+</nav>
+     </div>
+        
+</header>
+
+<!--Content-->
+    <div class="content clearflix">
+        <!---Mian content--->
+        <div class="main-content-wrapper">
+        <div class="main-content">
+            <h1 class="post-title">Meet the Black, Female Entrepreneurs Making a Safe Space for Minority Professionals</h1>
+            <div class="author">
+            <p>Dipper co-founders Jacinta C. Mathis and Netta Jenkins have discovered new purpose amid growing economic unease.</p>
+        </div>
+        <div class="post-image">
+            <img src="{% static 'img/pic1.jpeg' %}">
+        </div>
+       
+       <div class="post-content">
+          <p>When you think about the “American Dream," what probably comes to mind is getting a quality education and pursuing a successful career. As children, most minorities were encouraged to get a degree so they can land their dream jobs. However, achieving those goals didn't prepare us for substandard workplace environments, bad leadership, lack of equal pay and overall pervasive discrimination. Now, amid the COVID-19 crisis, we have to cope with the added challenge of toxic remote-work experiences.</p>
+          <p>However, there are many minority professionals making major strides in giving a voice to the voiceless. Take black, female tech innovators Jacinta C. Mathis and Netta Jenkins, who have created solutions platform Dipper, a digital safe place and community for minorities to share their workplace experiences — whether good, bad or in between — and navigate diversity, equity, inclusion and belonging.</p>
+          <p>I had the chance to speak with Jenkins about how minority workers are feeling as unemployment rises, and how they can be the best advocate for themselves now and in the future.</p>
+           <h2>That Sinking Feeling</h2>
+           <p>"The possibility of being laid off and not having a consistent income is giving many of us an unsettling feeling in our stomachs right now," Jenkins acknolwedges. "Professionals have many questions, including: Who's getting let go first? What are our options? Since the coronavirus outbreak, [we] have received a significant increase in positive and negative workplace reviews from minority professionals, and they are happy that professionals are sharing their workplace experiences to help guide others."</p>
+           <h2>Document Everything</h2>
+           <p>"During these times of uncertainty, with millions filing for unemployment, professionals should document their bad work experiences," advises Jenkins. "Minority professionals should keep an accurate track record of situations where they feel like their employer is committing acts that go against workforce regulations, discrimination laws and compensation laws.  When professionals keep a good track record, it enhances the distribution process when they have to escalate this information to their leadership, the human resources department and the EEO department."</p>
+           <h2>Communicate Early and Often</h2>
+           <p>"When you have properly documented your bad work experiences, you can expedite communication to the right officials early," Jenkins explains. "The Dipper community strongly encourages minority professionals to communicate their bad work experiences during COVID-19 as early as possible, because if professionals wait too long, they may be unlawfully laid off, receive unequal pay and may be mistreated for long durations. The world is already suffering from increased depression and anxiety. It's unhealthy to take on additional bad work experiences for long durations. Professionals can email documented information or properly file a complaint with the human resources department and the EEO department."</p>
+           
+       </div>
+        </div>
+        </div>
+    <!----End Main content---->
+       
+       
+    <!---Sidebar---->
+        <div class="sidebar">
+         
+          <div class="section popular">
+              <h2 class="section-title">Popular</h2>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic2.jpg' %}" alt="" >
+                  <a href="news2" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>This entrepreneur has built a platform to....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+             <div class="post clearfix">
+                  <img src="{% static 'img/pic3.png' %}" alt="" >
+                  <a href="news3" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>This startup by two mothers offers 1,200 activities....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic4.png' %}" alt="" >
+                  <a href="news4" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Aditi Gupta putting an end to a period of taboos with...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic5.jpg' %}" alt="" >
+                  <a href="news5" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Don’t be a tourist, be a traveler" How a VC in love...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic11.png' %}" alt="" >
+                  <a href="news11" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Life lessons from the sporting legend, Mary Kom, who saw</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+              
+              
+    </div>
+    </div>
+
+<!----End sidebar---->
+
+<!-----------Contact Us------>
+   <section id="contact">
+    <div class="contactus">
+    <div class="contactForm">
+        <h2>Leave a Reply</h2>
+        <div class="formBox">
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Last Name</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="email" name="" required>
+                <span>Email Address</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="number" name="" required>
+                <span>Mobile Number</span>
+            </div>            
+            <div class="inputBox w50">
+                <textarea type="text" name="" required></textarea>
+                <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+                <input type="submit" class="btn" value="Send Message">
+            </div>
+            
+        </div>
+    </div>
+       </div>
+    
+    </section>
+<!----End Contact Us--->
+
+<!-----Footer----->
+        <footer id="footer">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="{% static 'img/ladylogo.png' %}" alt="" class="logo">
+                 <div class="social-media">
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        <p class="right-text">
+          &copy; Copyright 2020 <strong><span>Womens Empowerment</span></strong>. All Rights
+          Reserved
+        </p>
+            </div>
+               <div class="right-col">
+                   <h1>Join Our Instant Alert System</h1>
+                   <div class="border"></div>
+                       <p>Enter Your Email for our news and updates.</p>
+                       <form action="" class="newsletter-form">
+                           <input type="email" class="txtb" placeholder="Enter Your Email">
+                           <input type="submit" class="btn" value="submit">
+                       </form>
+               </div>
+        </div>
+    </footer>
+
+<!------End Footer---->
+
+</body>
+</html>

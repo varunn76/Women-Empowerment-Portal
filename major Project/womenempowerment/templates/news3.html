@@ -1,0 +1,293 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This startup by two mothers offers 1,200 activities for babies, toddlers, and pre-schoolers</title>
+        <link href="{% static 'img/ladylogo.png' %}" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/stylenews1.css' %}">
+<!----Bootstrap--->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--jquery--->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--Slick Carousel-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
+        <!---Font awesome-->
+        <script src="https://kit.fontawesome.com/51c8af3595.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+    <body>
+    <!----Facebook page plugin-->
+    
+
+ <header>
+ <!----Back to top button--->
+         <a class="gotopbtn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+ <!------Navigation Bar---->
+ <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="website"><img src="{% static 'img/ladylogo.png' %}"></a>
+                
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="website">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="website#contact">CONTACT US</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mission">ENTERPENUR</a>
+      </li>
+        {% if user.is_authenticated %}
+                    <li class="drop-down"><a href="javascript:void(0)">Hii, {{user.first_name}}</a>
+                        <ul>
+                            <li><a href="LogOut">Log Out</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login" target="-blank">JOIN</a>
+            </li>
+            {% endif %}
+    </ul>
+  </div>
+</nav>
+     </div>
+        
+</header>
+
+<!--Content-->
+    <div class="content clearflix">
+        <!---Mian content--->
+        <div class="main-content-wrapper">
+        <div class="main-content">
+            <h1 class="post-title">This startup by two mothers offers 1,200 activities for babies, toddlers, and pre-schoolers</h1>
+            <div class="author">
+            <p>Launched by Sumedha Khoche and Shireen Sultana, the KinderPass app is inspired by the Montessori method, and contains activities for ages 0-4, screen-free exercises, and activities that parents can do with their children in the comfort of their own homes.</p>
+        </div>
+        <div class="post-image3">
+            <img src="{% static 'img/pic3.png' %}">
+        </div>
+       
+       <div class="post-content">
+           <p>With <strong><span>work-from-home</span></strong> being the new norm after the spread of coronavirus across the world, working parents are facing unique challenges. Most of them is centered on how to keep their little ones entertained and engaged while they juggle team video conference calls and collaborating on team decks remotely.</p>
+          
+          <p>In the absence of creches, nannies, or full-time help at home, managing work-from-home, especially with infants, can be overwhelming for parents.</p>
+          
+          <p>Social distancing and self-isolation have prompted young parents to search for online platforms and mobile apps <strong><span>to help them set up a routine for childcare, development, diet, and engagement activities.</span></strong></p>
+           
+           <h2>Early development</h2>
+           
+           <p>This is where KinderPass, a startup by two women entrepreneurs <strong><span>Sumedha Khoche (39) and Shireen Sultana (39)</span></strong> comes in. It offers well-curated content for parents that are tailored for their children. According to the founders, the platform brings together principles of Montessori and a repertoire of scientific research on early development.</p>
+           
+           <p>Sumedha was born and raised in Delhi and did her MBA from IIM-Indore. She went on to lead sales, insights, and consumer marketing at PepsiCo, and later at P&G, Singapore. She says, she discovered her true passion for teaching and early childhood education once her children were born.</p>
+           
+           <p>Shireen was born and raised in Visakhapatnam and also went to IIM-Indore for her MBA, and joined Madura Coats out of campus. She followed it up with stints in Mars India, Aircel, and ISB. <strong><span>Sumedha and Shireen were batchmates and roommates at IIM-Indore, and have known each other for 19 years now.</span></strong></p>
+           
+           <div class="red">
+               <p>“Entrepreneurship happened when I helped my husband setup White Cloud Brands to help SMBs solve business problems through marketing. Parenting brought on a curiosity-led understanding of various teaching principles (Montessori, Waldorf, PlayWay, etc.) and early childhood development and learning, which helps contribute to KinderPass today,” she says.</p>
+           </div>
+           
+           <p>
+               “Our own experience of being working parents - the first few years are the most crucial for child development, and this is precisely the time when parents are time-starved with so many different demands on their time - work, childcare, elderly care, and more. What we also observed all around us was the growing incidence of the phone becoming a teacher and babysitter for children - babies were getting a phone before even their first tooth,” says Sumedha.
+           </p>
+           
+           <h2>Involving all senses</h2>
+           
+           <p>KinderPass started operations in Singapore (where Sumedha is based) as a marketplace in May 2018. It pivoted to an at-home learning platform in July 2019.</p>
+           
+           <p>The founders say that children learn best through play, interactions with adults, and by activities that involve all senses. Passive viewing of videos is detrimental to a child’s developing brain - over-stimulation of some areas while other areas (such as fine motor skills, language or social-emotional skills) suffer.</p>
+           
+           <p> The KinderPass app contains <strong><span>1,200+ bite sized activities for ages 0-4, screen-free exercises, and activities that parents can do with their children </span></strong>in the comfort of their own homes, without needing any expensive material. Since the activities are Montessori-inspired, they are child-led, and help children become independent.</p>
+           
+           <p>These activities have been carefully designed to fit a busy parent’s schedule. Based on each day’s feedback (whether the activity is just right/too easy too tough), the activities for are changed for the next day.</p>
+           
+           <h2>A repertoire of fun activities</h2>
+           
+           <p>KinderPass features different sections that include:</p>
+           
+           <p><strong><span>Personalised -</span></strong> Based on the age and development stage, each child gets three different activities each day that enable his or her development. The activities have been designed to suit everyday situations and occasions - things that can be done during mealtime, waiting time, or even during shopping.</p>
+           
+           <p><strong><span>Growth Tracker and Milestone assessment - </span></strong>Based on WHO, AAP, HPB, and IAP guidelines, it’s a a simple self-administered tool that helps parents keep track of not just physical markers such as height and weight, but also monthly milestone checks.</p>
+           
+           <p><strong><span>A library</span></strong> of 400+ articles and videos related to each week of the parenting journey.</p>
+           
+           <p><strong><span>Adding caregivers - </span></strong>Through one account, multiple family members can view and participate in the child’s learning journey. Parents can also add multiple children to the same account.</p>
+           
+           <h2>More in store</h2>
+           
+           <p>Based on demand from parents, KinderPass has also created a range of toys, the first of these - <strong><span>Wobbl is a patent-pending 3-in-1 toy that will be launched soon.</span></strong> The founders are also looking to introduce online learning for three to six-year-olds.</p>
+           
+           <p>Every feature on the platform has been introduced after extensive research, a 14-day pilot programme and collaboration with experts like clinical psychologists, physiotherapists, art therapists, speech pathologists, school principals, and pediatricians. It also works with a panel of 15 childhood experts from India, Singapore, the US, and Europe. </p>
+           
+           <p>KinderPass works on a <strong><span>freemium model where users get a free trial for three months,</span></strong> and then pay a small subscription fee to access all premium features. Developmental products and learning modules are charged on an a la carte basis.</p>
+           
+           <h2>Convenient and cost-effective</h2>
+           
+           <p>Currently, the app has 30,000 subscribed users and 60,000 monthly users, and KinderPass has seen a 70 percent growth in usage since the lockdown.</p>
+           
+           <p>The startup was launched with the personal savings of the founders. “We’ve invested our personal savings and have been lucky to get the support of angel investors in India and Singapore in late 2017 - they have helped and supported our mission from day one, and been with us in our journey as we pivoted from being an activity marketplace to a learning app for 0-6 year old children. We are looking to raise our seed round to support our rapid growth,” she adds. </p>
+           
+           <p><strong><span> for the future, the founders plan to include adding more developmental products and online learning modules, but stay focussed on the pre-school years.</span></strong></p>
+           
+           <p> “The overriding philosophy will continue to be of tech-led personalisation, and we are exploring ways in which technology can enable multi-sensory learning in young children,” says Sumedha.</p>
+       </div>
+            </div>
+        </div>
+    <!----End Main content---->
+       
+       
+    <!---Sidebar---->
+        <div class="sidebar">
+         
+          <div class="section popular">
+              <h2 class="section-title">Popular</h2>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic1.jpeg' %}" alt="" >
+                  <a href="news1" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Meet the Black, Female Entrepreneurs Making a Safe...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+             <div class="post clearfix">
+                  <img src="{% static 'img/pic2.jpg' %}" alt="" >
+                  <a href="news2" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>This entrepreneur has built a platform to....</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic4.png' %}" alt="" >
+                  <a href="news4" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Aditi Gupta putting an end to a period of taboos with...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic11.png' %}" alt="" >
+                  <a href="news11" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>Life lessons from the sporting legend, Mary Kom, who saw</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="post clearfix">
+                  <img src="{% static 'img/pic5.jpg' %}" alt="" >
+                  <a href="news5" class="title">
+                      <div class="pop">
+                         <div style="overflow: hidden">
+                          <span>How a VC in love with travel fell for her...</span>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+              
+            </div>
+    </div>
+    </div>
+
+<!----End sidebar---->
+
+<!-----------Contact Us------>
+   <section id="contact">
+    <div class="contactus">
+    <div class="contactForm">
+        <h2>Leave a Reply</h2>
+        <div class="formBox">
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input type="text" name="" required>
+                <span>Last Name</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="email" name="" required>
+                <span>Email Address</span>
+            </div>            
+            <div class="inputBox w50">
+                <input type="number" name="" required>
+                <span>Mobile Number</span>
+            </div>            
+            <div class="inputBox w50">
+                <textarea type="text" name="" required></textarea>
+                <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w100">
+                <input type="submit" class="btn" value="Send Message">
+            </div>
+            
+        </div>
+    </div>
+       </div>
+    
+    </section>
+<!----End Contact Us--->
+
+<!-----Footer----->
+        <footer id="footer">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="{%{% static 'img/ladylogo.png' %}" alt="" class="logo">
+                 <div class="social-media">
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        <p class="right-text">
+          &copy; Copyright 2020 <strong><span>Womens Empowerment</span></strong>. All Rights
+          Reserved
+        </p>
+            </div>
+               <div class="right-col">
+                   <h1>Join Our Instant Alert System</h1>
+                   <div class="border"></div>
+                       <p>Enter Your Email for our news and updates.</p>
+                       <form action="" class="newsletter-form">
+                           <input type="email" class="txtb" placeholder="Enter Your Email">
+                           <input type="submit" class="btn" value="submit">
+                       </form>
+               </div>
+        </div>
+    </footer>
+
+<!------End Footer---->
+
+</body>
+</html>
