@@ -25,5 +25,5 @@ urlpatterns = [
     path('LogOut', views.LogOut),
     path('login', views.Login),
     path('loginData', views.loginData),
-
+    path('', include('wp.urls')),
 ]
