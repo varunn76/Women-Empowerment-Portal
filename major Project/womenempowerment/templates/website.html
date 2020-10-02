@@ -309,16 +309,16 @@
 
       </div>
 
-      <div action="feedback" method="POST" class="contactForm">
+      <form action="feedback" method="POST" class="contactForm">
         {% csrf_token %}
         <h2>Send a Message</h2>
         <div class="formBox">
           <div class="inputBox w50">
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="first_name" id="name" required>
             <span>First Name</span>
           </div>
           <div class="inputBox w50">
-            <input type="text" name="lastname" id="lastname" required>
+            <input type="text" name="last_name" id="lastname" required>
             <span>Last Name</span>
           </div>
           <div class="inputBox w50">
@@ -326,7 +326,7 @@
             <span>Email Address</span>
           </div>
           <div class="inputBox w50">
-            <input type="number" name="number"  id="number" required>
+            <input type="number" name="phone_no"  id="number" required>
             <span>Mobile Number</span>
           </div>
           <div class="inputBox w50">
@@ -338,7 +338,7 @@
           </div>
 
         </div>
-      </div>
+      </form>
     </div>
 
   </section>
